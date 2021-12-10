@@ -17,7 +17,8 @@ var pages = IntroFrame[]{
                     OnEndCallback = () =>
                     {
                         IntroPager.Dismiss();
-                    }
+                    },
+                    EndButtonText = "Let's Get Started"
                 }
 IntroPager.Build(pages);
 }
