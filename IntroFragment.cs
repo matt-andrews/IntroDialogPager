@@ -20,6 +20,10 @@ namespace IntroDialogPager
         {
             return new IntroFragment(obj, dialog);
         }
+        /// <summary>
+        /// An empty ctor to satisfy android requirement when rebuilding due to orientation change
+        /// </summary>
+        public IntroFragment() { }
         public IntroFragment(IntroFrame obj, IntroDialog dialog)
         {
             _data = obj;
