@@ -36,6 +36,7 @@
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textSize="25sp"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:id="@+id/title"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -63,6 +64,7 @@
                     android:id="@+id/message"
                     android:padding="25dp"
                     android:textSize="16sp"
+                    android:textColor="?android:attr/textColorSecondary"
                     android:textAlignment="center"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

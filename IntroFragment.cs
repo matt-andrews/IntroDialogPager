@@ -28,6 +28,7 @@ namespace IntroDialogPager
         {
             _data = obj;
             _dialog = dialog;
+            RetainInstance = true;
         }
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -40,7 +41,9 @@ namespace IntroDialogPager
             var titleTxt = view.FindViewById<TextView>(Resource.Id.title);
             var img = view.FindViewById<ImageView>(Resource.Id.img);
             var backgroundImg = view.FindViewById<ImageView>(Resource.Id.background);
-            
+
+            if (_data == null)
+                return;
 
             if (_data.HideImage)
             {
